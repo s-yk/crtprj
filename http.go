@@ -5,10 +5,10 @@ import (
 	"net/http"
 )
 
-// GetProjectTemplate Get zip from github
-func GetProjectTemplate(fileName string) error {
+// getProjectTemplate Get zip from github
+func getProjectTemplate(fileName string) error {
 
-	url := "https://github.com/s-yk/golang-study/archive/master.zip"
+	url := "https://github.com/s-yk/crtprj/archive/master.zip"
 
 	resp, err := http.Get(url)
 	if err != nil {

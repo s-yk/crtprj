@@ -14,11 +14,11 @@ func main() {
 
 	zipName := "master.zip"
 
-	err := GetProjectTemplate(zipName)
+	err := getProjectTemplate(zipName)
 	check(err)
 
 	dest := os.Args[1]
-	err = Extract(zipName, dest)
+	err = extract(zipName, dest)
 	check(err)
 }
 
